@@ -88,10 +88,13 @@ btnHold.addEventListener('click', function () {
           .classList.add('player--active');
         current1El.textContent = 0;
       }
+      diceEl.classList.add('hidden');
     }
   }
 });
 btnNew.addEventListener('click', function () {
+  document.querySelector('.player--1').classList.remove('player--active');
+
   document
     .querySelector('.player--' + player)
     .classList.remove('player--winner');
