@@ -48,3 +48,29 @@ btnRoll.addEventListener('click', function () {
     }
   }
 });
+
+btnHold.addEventListener('click', function () {
+  scores[player] += currentScore;
+  currentScore = 0;
+  if (player === 0) {
+    score0El.textContent = scores[player];
+    document
+      .querySelector('.player--' + player)
+      .classList.remove('player--active');
+    player = 1;
+    document
+      .querySelector('.player--' + player)
+      .classList.add('player--active');
+    current0El.textContent = 0;
+  } else {
+    score1El.textContent = scores[player];
+    document
+      .querySelector('.player--' + player)
+      .classList.remove('player--active');
+    player = 0;
+    document
+      .querySelector('.player--' + player)
+      .classList.add('player--active');
+    current1El.textContent = 0;
+  }
+});
