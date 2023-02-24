@@ -1,0 +1,44 @@
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 50%;
+  }
+
+  main {
+    flex-direction: column;
+    overflow: visible;
+    padding: 0;
+    height: auto;
+  }
+
+  .player {
+    flex: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1.6rem;
+  }
+
+  .btn--new {
+    top: -8rem;
+  }
+
+  .name {
+    font-size: 3rem;
+    width: fit-content;
+    margin-bottom: 0;
+  }
+
+  .current {
+    width: auto;
+  }
+
+  .dice {
+    top: -24rem;
+  }
+
+  .score {
+    font-size: 5rem;
+    margin-bottom: 0;
+    width: 4rem;
+  }
+}
