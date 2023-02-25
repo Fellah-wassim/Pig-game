@@ -22,6 +22,14 @@ body {
   justify-content: center;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* LAYOUT */
 main {
   position: relative;
